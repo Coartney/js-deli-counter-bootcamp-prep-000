@@ -23,7 +23,6 @@ function currentLine(katzDeliLine){
   var i = 0;
   if (katzDeliLine.length> 0){
   while (i < katzDeliLine.length){
-    n++;
     var customer = katzDeliLine[i];
     var newLine = []
     newLine.push(`${n}. ${customer} `)
