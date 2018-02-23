@@ -22,7 +22,7 @@ function currentLine(katzDeliLine){
   var n = 0;
   var i = 0;
   if (katzDeliLine.length> 0){
-  while (i < katzDeliLine.length;){
+  while (i < katzDeliLine.length){
     n++;
     var customer = katzDeliLine[i];
     var newLine = []
