@@ -27,8 +27,8 @@ function currentLine(katzDeliLine){
     newLine.push(`${n}. ${customer} `)
     n++;
   } return `The line is currently: ${newLine}.`
-  return 'The line is currently empty.'
-  } else {
   
+  } else {
+  return 'The line is currently empty.'
   }
 }
