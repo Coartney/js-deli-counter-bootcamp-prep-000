@@ -28,7 +28,8 @@ function currentLine(katzDeliLine){
     newLine.push(` ${n}. ${customer}`)
     i++;
     n++;
-  }return `The line is currently:${newLine}`
-  }  
+  } return `The line is currently:${newLine}`
+  }  else {
   return 'The line is currently empty.'
+  }
 }
