@@ -20,12 +20,12 @@ function nowServing(katzDeliLine){
 }
 function currentLine(katzDeliLine){
   var n = 1;
+  if (katzDeliLine.length> 0){
   for (var i = 0; i < katzDeliLine.length; i++){
     var customer = katzDeliLine[i];
     var newLine = []
     newLine.push(`${n}. ${customer} `)
     n++;
-    return `The line is currently: ${newLine}.`
-  }
+  } return `The line is currently: ${newLine}.`
   return 'The line is currently empty.'
 }
