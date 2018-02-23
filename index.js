@@ -9,9 +9,16 @@ function takeANumber(katzDeliLine, newPerson){
   return newLine;
 }
 function nowServing(katzDeliLine){
-  if (katzDeliLine.length > 0){
+ /*if (katzDeliLine.length > 0){
   return katzDeliLine.unshift()}
   else {
     return `There is nobody waiting to be served!`
+  }*/
+  var i = 0
+  while (i < katzDeliLine.length){
+    var serving = katzDeliLine[i];
+    return `Currently serving ${serving}`
+    i++;
   }
+  
 }
