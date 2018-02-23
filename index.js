@@ -19,13 +19,13 @@ function nowServing(katzDeliLine){
   return 'There is nobody waiting to be served!'
 }
 function currentLine(katzDeliLine){
-  var n = 1;
+  var n = 0;
   if (katzDeliLine.length> 0){
   for (var i = 0; i < katzDeliLine.length; i++){
+    n++;
     var customer = katzDeliLine[i];
     var newLine = []
     newLine.push(`${n}. ${customer} `)
-    n++;
   } return `The line is currently: ${newLine}.`
   
   } else {
