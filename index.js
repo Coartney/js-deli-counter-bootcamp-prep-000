@@ -21,5 +21,5 @@ function nowServing(katzDeliLine){
     return `Currently serving ${serving}.`
     i++;
   }
-  
+  return 'There is nobody waiting to be served!'
 }
