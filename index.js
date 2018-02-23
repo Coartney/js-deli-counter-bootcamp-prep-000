@@ -22,12 +22,13 @@ function currentLine(katzDeliLine){
   var n = 1;
   var i = 0;
   var newLine = [];
+  if (katzDeliLine.length > 0){
   while (i < katzDeliLine.length){
     var customer = katzDeliLine[i];
     newLine.push(` ${n}. ${customer}`)
     i++;
     n++;
-    return `The line is currently:${newLine}`
-  } 
+  }
+  }  return `The line is currently:${newLine}`
   return 'The line is currently empty.'
 }
