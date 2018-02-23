@@ -19,7 +19,7 @@ function nowServing(katzDeliLine){
   return 'There is nobody waiting to be served!'
 }
 function currentLine(katzDeliLine){
-  for (i = 0; i < katzDeliLine.length; i++){
+  for (var i = 0; i < katzDeliLine.length; i++){
     return katzDeliLine[i];
   }
   return 'The line is currently empty.'
